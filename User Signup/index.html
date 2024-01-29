@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Join the Strawhats</title>
+    <link rel="shortcut icon" href="pictures/jolly_roger.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <div class="wholeSide h-flex">
+            <div class="leftSide v-flex">
+                <div id="title" class="h-flex">
+                    <img src="pictures/jolly_roger.png" alt="Luffy's jolly roger. A skull and crossbones wearing a strawhat" id="logo">
+                    <span>Join<br>My Crew</span>
+                </div>
+            
+            </div>
+            <div class="rightSide v-flex">
+                <div class="upper">
+                    <div class="upper-content">
+                        <span>"My name is Monkey D. Luffy and I'm gonna be KING OF THE PIRATES! We're on an adventure around the whole world looking for the One Piece. Hop on board and join us!"</span>
+                        <br>
+                        <br>
+                        <em>~Luffy</em>
+                    </div>
+                </div>
+                <div class="mid">
+                    <span class="main-font">Tell us about yourself</span>
+                    <form action="" id="user-details">
+                     <div class="row h-flex">
+                        <div class="input-group">
+                            <label for="first_name">First Name</label>
+                            <input id="first_name" type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="last_name">Last Name</label>
+                            <input id="last_name" type="text" required>
+                        </div>
+                     </div>
+                     <div class="row h-flex">
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Snail Number</label>
+                            <input id="phone" type="tel" required>
+                        </div>
+                     </div>
+                     <div class="row h-flex">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input  id="Password" 
+                                    type="password"
+                                    onkeyup=""
+                                    required>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input  id="confirm_password" 
+                                    type="password"
+                                    onkeyup="val_Password()" 
+                                    required>
+                        </div>
+                     </div>
+                     
+                    </form>
+                </div>
+                <div class="lower">
+                    <span id="wrong-password-msg"></span>
+                    <button type="submit" form="user-details">Join Crew</button>
+                    <span class="login">Already a Strawhat? 
+                        <a href="">Log in</a>
+                    </span>
+                    
+                </div>
+                <!--<p class="foot-text">copyright Eiichiro Oda</p> -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

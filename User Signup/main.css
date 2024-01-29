@@ -1,0 +1,200 @@
+@font-face {
+    font-family: op-manga-font;
+    src: url(Fonts/one\ piece\ font.ttf);
+}
+@font-face {
+    font-family: carlosea;
+    src: url(Fonts/CarloseademoRegular-K7z7D.otf);
+}
+html {
+    font: 1em carlosea;    
+}
+* {
+    border: px solid
+}
+body { 
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+.main-font{
+    font-size: 1.7rem;
+}
+.h-flex{
+    display: flex;
+}
+.v-flex{
+    display: flex;
+    flex-direction: column;
+}
+.leftSide{
+    width: 45vw;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(pictures/strawhats.jpg); 
+    background-size: cover;
+}
+#title{
+    height: fit-content;
+    background-color: rgba(128, 0, 0, 0.5);
+    
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    padding: 10px 0px;
+
+    text-align: center;
+    overflow: hidden;
+}
+#title > span{
+    color: rgb(246, 250, 215);
+    font-family: op-manga-font;
+    font-size: 4rem;
+}
+
+#logo{
+    aspect-ratio: 4/4;
+    height: 20vh;
+}
+
+.rightSide{
+    width: 60vw;
+
+    background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
+    background-size: 100% 100%;
+    border: 2px solid;
+    border-color: rgb(63, 45, 33);
+}
+
+.upper{
+    height: 30vh;
+    padding: 5px;
+    position: relative;
+    font-size: 1.7rem;
+    font-family: carlosea;
+
+
+}
+.upper>em {
+    font-size: 3rem;
+}
+
+.upper-content{
+    position: absolute;
+    width: 80%;
+    min-width: 400px;
+    overflow: hidden;
+    
+    margin-left: 30px;
+    top: 20px;
+    line-height: 1.05;
+
+    background-color: antiquewhite;
+    border: 2px brown solid;
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+
+    
+.mid {
+    padding: 40px 60px 25px 90px;
+    min-height: 330px;
+    z-index: 1;
+
+    background-image: url(pictures/burned\ Paper.png);
+    background-size: 100% 100%;
+}
+.mid >span{
+    font-family: carlosea;
+    font-size: 2.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 50px
+}
+.row {
+    justify-content: space-evenly;
+    display:flex;
+    flex-wrap: wrap;
+}
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form {
+    margin-top: 15px;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+    letter-spacing: 0.07rem;
+    font-family: carlosea;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    padding-left: 5px;
+
+    border-radius: 3px;
+    border: 1px rgb(51, 34, 22) solid;
+    
+    background-color: rgb(255, 249, 241);
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 2.5px 2px 6px rgb(163, 129, 90);
+}
+
+input:invalid:focus {
+    border: 3px rgb(151,37,37) solid;
+}
+input:valid:focus {
+    border: 2px rgb(38, 151, 38) solid;
+}
+.lower {
+    min-height: 30px;
+    padding: 20px 60px;
+}
+
+span > a {
+    
+}
+button {
+    width: 20vw;
+    height: 7vh;
+    min-width: 180px;
+
+    font-family: op-manga-font;
+    font-size: 2.5rem;
+    color: rgb(246, 250, 215);
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: rgb(151,37,37);
+
+    border-radius: 6px;
+    border: 4px rgba(112, 79, 18, 0.5) solid;
+
+    margin: 20px 0px 0px 0px
+    
+}
+button:hover {
+    cursor: pointer;
+    filter: brightness(93%);
+}
+.foot-text {
+    bottom: 5px;
+    right: 25%;
+    font-size: 0.8rem;
+    
+}
